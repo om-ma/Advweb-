@@ -1,0 +1,457 @@
+<!-- <style>
+	
+body {
+  padding: 20px;
+  font-family: sans-serif;
+  background: #f2f2f2;
+}
+img {
+  width: 100%; /* need to overwrite inline dimensions */
+  height: auto;
+}
+h2 {
+  margin-bottom: .5em;
+}
+
+/* hover styles */
+.location-listing {
+  position: relative;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(90,0,10,0.4);
+  color: white;
+  
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+}
+
+
+/* for touch screen devices */
+@media (hover: none) { 
+  .location-title {
+    opacity: 1;
+  }
+  .location-image img {
+    filter: blur(2px);
+  }
+}
+
+</style>
+
+
+
+
+<div class="child-page-listing">
+
+  <h2>Our Locations</h2>
+
+  <div class="grid-container_pro">
+
+    <article id="3685" class="location-listing">
+
+      <a class="location-title" href="#">
+                    San Francisco                       </a>
+
+      <div class="location-image">
+        <a href="#">
+                        <img width="300" height="169" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/san-fransisco-768x432.jpg" alt="san francisco">      </a>
+
+      </div>
+
+    </article>
+
+    <article id="3688" class="location-listing">
+
+      <a class="location-title" href="#">
+                    London                      </a>
+
+      <div class="location-image">
+        <a href="#">
+                        <img width="300" height="169" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/london-768x432.jpg" alt="london">    </a>
+
+      </div>
+
+    </article>
+
+    <article id="3691" class="location-listing">
+
+      <a class="location-title" href="#">
+                    New York                        </a>
+
+      <div class="location-image">
+        <a href="#">
+                        <img width="300" height="169" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/new-york-768x432.jpg" alt="new york">    </a>
+
+      </div>
+
+    </article>
+
+    <article id="3694" class="location-listing">
+
+      <a class="location-title" href="#">
+                    Cape Town                       </a>
+
+      <div class="location-image">
+        <a href="#">
+                        <img width="300" height="169" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/cape-town-768x432.jpg" alt="cape town">  </a>
+
+      </div>
+
+    </article>
+
+    <article id="3697" class="location-listing">
+
+      <a class="location-title" href="#">
+                    Beijing                     </a>
+
+      <div class="location-image">
+        <a href="#">
+                        <img width="300" height="169" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/beijing-768x432.jpg" alt="beijing">      </a>
+
+      </div>
+
+    </article>
+
+    <article id="3700" class="location-listing">
+
+      <a class="location-title" href="#">
+                    Paris                       </a>
+
+      <div class="location-image">
+        <a href="#">
+                        <img width="300" height="169" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/paris-768x432.jpg" alt="paris">                  
+                    </a>
+      </div>
+
+    </article>
+
+  </div>
+end grid container
+
+</div> -->
+
+
+<style type="text/css">
+  
+*, *:after, *:before{
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+
+.products_company12{
+  background-color: #7A7AEE;
+  height: 685px;
+  padding-top: 30px;
+}
+
+
+#picture1{
+  position:absolute;
+  z-index:13;
+  display:block;
+  width:400px;
+  height:200px;
+  top:850px;
+  margin-left:100px;
+  animation: leftIn 6s ease-in-out;
+  -webkit-animation: leftIn 6s ease-in-out;
+  -moz-animation: leftIn 6s ease-in-out;
+  -o-animation: leftIn 6s ease-in-out;
+}
+
+#picture3{
+  position:absolute;
+  z-index:131;
+  display:block;
+  width:400px;
+  height:200px;
+  top:1067px;
+  margin-left:100px;
+  animation: leftIn 6s ease-in-out;
+  -webkit-animation: leftIn 6s ease-in-out;
+  -moz-animation: leftIn 6s ease-in-out;
+  -o-animation: leftIn 6s ease-in-out;
+}
+
+#picture4{
+  position:absolute;
+  z-index:113;
+  display:block;
+  width:400px;
+  height:200px;
+  top:1285px;
+  margin-left:100px;
+  animation: leftIn 6s ease-in-out;
+  -webkit-animation: leftIn 6s ease-in-out;
+  -moz-animation: leftIn 6s ease-in-out;
+  -o-animation: leftIn 6s ease-in-out;
+}
+
+@-webkit-keyframes leftIn{
+  from{
+    opacity:0;
+    width:0;
+    transform: rotateX(-100deg);
+  }
+  to{
+    opacity:1;
+    transition: margin-left 6s ease-in-out;
+    transform: rotateX(0);
+  }
+}
+
+@-moz-keyframes leftIn{
+  from{
+    opacity:0;
+    width:0;
+    transform: rotateX(-100deg);
+  }
+  to{
+    opacity:1;
+    transition: margin-left 6s ease-in-out;
+    transform: rotateX(0);
+  }
+}
+
+@-o-keyframes leftIn{
+  from{
+    opacity:0;
+    width:0;
+    transform: rotateX(-100deg);
+  }
+  to{
+    opacity:1;
+    transition: margin-left 6s ease-in-out;
+    transform: rotateX(0);
+  }
+}
+
+@keyframes leftIn{
+  from{
+    opacity:0;
+    width:0;
+    transform: rotateX(-100deg);
+  }
+  to{
+    opacity:1;
+    transition: margin-left 6s ease-in-out;
+    transform: rotateX(0);
+  }
+}
+
+#picture2{
+  position:absolute;
+  width:400px;
+  height:200px;
+  top:850px;
+  right:117px;
+  animation: rightIn 6s ease-in-out;
+  -webkit-animation: rightIn 6s ease-in-out;
+  -moz-animation: rightIn 6s ease-in-out;
+  -o-animation: rightIn 6s ease-in-out;
+  z-index:14;
+}
+
+#picture5{
+  position:absolute;
+  width:400px;
+  height:200px;
+  top:1067px;
+  right:117px;
+  animation: rightIn 6s ease-in-out;
+  -webkit-animation: rightIn 6s ease-in-out;
+  -moz-animation: rightIn 6s ease-in-out;
+  -o-animation: rightIn 6s ease-in-out;
+  z-index:14;
+}
+
+#picture6{
+  position:absolute;
+  width:400px;
+  height:200px;
+  top:1285px;
+  right:117px;
+  animation: rightIn 6s ease-in-out;
+  -webkit-animation: rightIn 6s ease-in-out;
+  -moz-animation: rightIn 6s ease-in-out;
+  -o-animation: rightIn 6s ease-in-out;
+  z-index:14;
+}
+
+@-webkit-keyframes rightIn{
+  from{
+    opacity:0;
+    width:0;
+    transform: rotateX(-100deg);
+  }
+  to{
+    opacity:1;
+    transform: rotateX(0);
+    transition: margin-right 6s ease-in-out;
+  }
+}
+
+@-moz-keyframes rightIn{
+  from{
+    opacity:0;
+    width:0;
+    transform: rotateX(-100deg);
+  }
+  to{
+    opacity:1;
+    transform: rotateX(0);
+    transition: margin-right 6s ease-in-out;
+  }
+}
+
+@-o-keyframes rightIn{
+  from{
+    opacity:0;
+    width:0;
+    transform: rotateX(-100deg);
+  }
+  to{
+    opacity:1;
+    transform: rotateX(0);
+    transition: margin-right 6s ease-in-out;
+  }
+}
+
+@keyframes rightIn{
+  from{
+    opacity:0;
+    width:0;
+    transform: rotateX(-100deg);
+  }
+  to{
+    opacity:1;
+    transform: rotateX(0);
+    transition: margin-right 6s ease-in-out;
+  }
+}
+
+
+
+.overlay{
+  width:600px;
+  height:625px;
+  margin-left: auto;
+  margin-right:auto;
+  left:20px;
+  right:20px;
+  border:10px solid whitesmoke;
+  animation-name:deneme;
+  animation-direction:normal;
+  animation-fill-mode:forwards;
+  opacity:0;
+  animation-duration:2s;
+  animation-delay:6s;
+
+}
+
+@keyframes deneme{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+    background-color:rgba(254, 250, 255, 0.3);
+  }
+}
+
+@-webkit-keyframes deneme{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+    background-color:rgba(254, 250, 255, 0.3);
+  }
+}
+
+@-moz-keyframes deneme{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+    background-color:rgba(254, 250, 255, 0.3);
+  }
+}
+
+@-o-keyframes deneme{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+    background-color:rgba(254, 250, 255, 0.3);
+  }
+}
+
+.overlay h1{
+  font-size:6em;
+  color:white;
+  text-align:center;
+}
+.overlay1{
+  margin-top: 180px;
+}
+
+
+</style>
+<div class="products_company12">
+<div class="tab-content-1" id="home" class="home">
+ <div class="container-1">
+  <img id="picture1" alt="picture-1" src="https://s.yimg.com/ny/api/res/1.2/YqCmzwJ.2RwaOhNjsdUZKQ--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAwO2lsPXBsYW5l/https://www.sunset.com/wp-content/uploads/1-modsy-2019-decor-predictions-pr-1218-900x500-800x0-c-default.jpg">
+  <img id="picture3" alt="picture-1" src="https://s.yimg.com/ny/api/res/1.2/YqCmzwJ.2RwaOhNjsdUZKQ--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAwO2lsPXBsYW5l/https://www.sunset.com/wp-content/uploads/1-modsy-2019-decor-predictions-pr-1218-900x500-800x0-c-default.jpg">
+  <img id="picture4" alt="picture-1" src="https://s.yimg.com/ny/api/res/1.2/YqCmzwJ.2RwaOhNjsdUZKQ--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAwO2lsPXBsYW5l/https://www.sunset.com/wp-content/uploads/1-modsy-2019-decor-predictions-pr-1218-900x500-800x0-c-default.jpg">
+  </div>
+ <div class="container-2">
+  <img id="picture2" alt="picture-2" src="https://cdn.vox-cdn.com/uploads/chorus_image/image/55825603/the_standish_model_apartment_matter_dezeen_hero.0.jpg">
+  <img id="picture5" alt="picture-2" src="https://cdn.vox-cdn.com/uploads/chorus_image/image/55825603/the_standish_model_apartment_matter_dezeen_hero.0.jpg">
+  <img id="picture6" alt="picture-2" src="https://cdn.vox-cdn.com/uploads/chorus_image/image/55825603/the_standish_model_apartment_matter_dezeen_hero.0.jpg">
+  </div>
+</div>
+  
+
+  <div class="overlay">
+    <div class="overlay1">
+      <h1>Interior Design</h1>
+    </div>  
+  </div>
+</div>
