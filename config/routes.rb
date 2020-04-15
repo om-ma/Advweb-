@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root to: 'home#home'
   get '/home', :to => 'home#home'
+  get '/contact', :to => 'home#contact_us'
   get '/service', :to => 'services#index'
   get '/clients', :to => 'client#client_index'
   get '/portfolio', :to => 'portfolio#index'
