@@ -609,7 +609,7 @@ body[data-layout=topnav] .footer {
     height: 605px;
   }
   .overlay{
-    width: 1000px;
+    width: 86%;
     height: 115px;
     padding-top: 2px;
     margin-top: -133px
@@ -639,11 +639,13 @@ body[data-layout=topnav] .footer {
   }
   .work_body{
     height: 524px;
+    margin-top: 15px;
+    padding-top: 20px;
   }
   .grid-box-1{
-    width: 239px;
-    margin: 3px;
-    height: 273px;
+    width: calc(100% / 3 - 4px);
+    margin: 2px;
+    height: 276px;
   }
   .grid-box-1 img{
     height: 264px;
@@ -654,8 +656,7 @@ body[data-layout=topnav] .footer {
   .products_company12 {
     height: 830px;
     padding-top: 150px;
-}
-  
+  }  
 }
 .work_body {
   width: 100%;
